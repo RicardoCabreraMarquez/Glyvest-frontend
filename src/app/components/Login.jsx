@@ -49,7 +49,7 @@ export function Login() {
           <h1 className="Mitr text-2xl mt-20 self-center font-bold">Bienvenido a</h1>
 
           <div className="flex justify-center items-center">
-              <img src="./src/assets/image/Logo2.png" className="w-64 mt-2" />
+              <img src="./image/Logo2.png" className="w-64 mt-2" />
           </div>
 
           <form className="self-center" onSubmit={handleSubmit}>
