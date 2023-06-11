@@ -130,7 +130,7 @@ export function Nav() {
             <div id="editfondo" className="bg-fondo w-full h-screen fixed z-30 hidden"></div>
 
             <nav id="nav" className={`w-full h-12 bg-principal fixed inline-flex items-center z-20 Mitr`}>
-                <img src="./src/assets/image/Logo3.png" className="w-56 ml-5 fixed hidden lg:block"/>
+                <img src="./image/Logo3.png" className="w-56 ml-5 fixed hidden lg:block"/>
 
                 
                 <div className="container mx-auto justify-center hidden lg:flex">
@@ -149,10 +149,10 @@ export function Nav() {
                 
                 
                 <div className="flex items-center lg:hidden">
-                    <img onClick={menuPerfilMovil} className="w-9 border fixed left-4 border-black rounded-full cursor-pointer" src="./src/assets/image/photoprofile.jpg"/>
+                    <img onClick={menuPerfilMovil} className="w-9 border fixed left-4 border-black rounded-full cursor-pointer" src="./image/photoprofile.jpg"/>
 
                     <div className="flex justify-center w-screen">
-                        <img className="w-48" src="./src/assets/image/Logo3.png"/>
+                        <img className="w-48" src="./image/Logo3.png"/>
                     </div>
                     
 
@@ -179,7 +179,7 @@ export function Nav() {
 
             <div id="menuperfil" className="h-96 w-96 fixed bg-white float-left left-4 border z-30 mt-12 rounded-b-xl hidden">
                 <div className="flex justify-center">
-                    <img className="w-28 mt-5 rounded-full border border-black" src="./src/assets/image/photoprofile.jpg" />
+                    <img className="w-28 mt-5 rounded-full border border-black" src="./image/photoprofile.jpg" />
                 </div>
                 <p className="mt-3 text-center text-lg">@{datosUsuarios.user}</p>
                 <p className="mt-5 text-center text-lg"><span className="font-bold">0</span> Siguiendo | <span className="font-bold">0</span> seguidores</p>
@@ -194,7 +194,7 @@ export function Nav() {
                 <p className="text-center text-xl mt-2">Editar perfil</p>
                 <hr className="mt-2 border-gray-300" />
                 <p className="mt-3 text-lg text-center font-bold underline decoration-solid">Foto del perfil</p>
-                <img id="imagen" src="./src/assets/image/photoprofile.jpg" className="w-36 m-auto mt-5 rounded-full border border-black" />
+                <img id="imagen" src="./image/photoprofile.jpg" className="w-36 m-auto mt-5 rounded-full border border-black" />
                 <div className="flex justify-center mt-7">
                     <label htmlFor="input-file" className="cursor-pointer bg-principal hover:bg-red-700 text-white py-2 px-6 rounded-xl">
                         Cambiar Foto

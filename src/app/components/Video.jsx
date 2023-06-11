@@ -2,10 +2,10 @@ export function Video() {
   return(
     <>
       <div className="w-login h-10 mt-14 mb-2 rounded-t-xl flex justify-center items-center self-center Mitr z-10">
-        <img src="./src/assets/image/photoprofile.jpg" className="w-8 h-8 rounded-full border border-black"/>
+        <img src=".image/photoprofile.jpg" className="w-8 h-8 rounded-full border border-black"/>
         <p className="ml-2 font-bold">Username</p>
       </div>
-      <video src="./src/assets/image/video1.mp4" className="w-login h-image self-center rounded-lg z-10" autoPlay></video>
+      <video src="./image/video1.mp4" className="w-login h-image self-center rounded-lg z-10" autoPlay></video>
       <div className="w-login h-10 mt-2 rounded-b-xl flex justify-center items-center self-center z-10" id="crear">
         <div id="like">
           <i id="icono2" className="fa-regular fa-heart text-black text-xl"></i>

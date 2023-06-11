@@ -47,7 +47,7 @@ export function MenuIzquierda() {
   return(
     <div id="scroll">
       <div className="h-screen w-setting Mitr fixed top-0 left-0 border-r border-principal hidden lg:block ">
-        <img src="./src/assets/image/photoprofile.jpg" className="w-32 m-auto mt-20 rounded-full border border-black" />
+        <img src="./image/photoprofile.jpg" className="w-32 m-auto mt-20 rounded-full border border-black" />
         <p className="text-center text-lg mt-3">@{datosUsuarios.user}</p>
         <p className="text-center text-lg mt-3"><span className="font-bold">0</span> Siguiendo | <span className="font-bold">0</span> Seguidores</p>
         <div className="centra-boton flex justify-center mt-6">
@@ -63,7 +63,7 @@ export function MenuIzquierda() {
         <p className="text-center text-xl mt-2">Editar perfil</p>
         <hr className="mt-2 border-gray-300" />
         <p className="mt-3 text-lg text-center font-bold underline decoration-solid">Foto del perfil</p>
-        <img id="imagen" src="./src/assets/image/photoprofile.jpg" className="w-36 m-auto mt-5 rounded-full border border-black" />
+        <img id="imagen" src="./image/photoprofile.jpg" className="w-36 m-auto mt-5 rounded-full border border-black" />
         <div className="flex justify-center mt-7">
             <label htmlFor="input-file" className="cursor-pointer bg-principal hover:bg-red-700 text-white py-2 px-6 rounded-xl">
                 Cambiar Foto
