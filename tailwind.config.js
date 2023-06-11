@@ -18,7 +18,7 @@ export default {
         'fondo': 'rgba(0, 0, 0, 0.80)',
       },
       backgroundImage: {
-        'login': "url('./public/image/fondo.svg')",
+        'login': "url('../public/image/fondo.svg')",
       },
       width: {
         'login': '31.25rem',
