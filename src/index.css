@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+      font-family: "Mitr Light";
+      src: url('assets/fonts/Mitr-Light.ttf');
+  }
+  .Mitr {
+      font-family: "Mitr Light";
+  }
+
+  .icon {
+      font-family: Arial,FontAwesome;
+  }
+}
