@@ -51,6 +51,32 @@ export function Nav() {
         }  
     }
 
+    const enviarCorreo = (x) => {
+        x.preventDefault();
+
+        try{
+            fetch('https://glyvest.onrender.com/correo', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${datosUsuarios.token}`,
+            },
+            body: JSON.stringify({
+                to: datosUsuarios.email,
+            })
+            })
+            .then((response) => response.json())
+            .then((data) => {
+            console.log(data);
+            })
+            .catch((error) => {
+            console.error(error);
+            });
+        } catch(err){
+            alert('Error al enviar el correo');
+        }  
+    }
+
     const menuPerfilMovil = () => {
         const perfil = document.getElementById('menuperfil');
         const fondo = document.getElementById('editfondo');
@@ -211,7 +237,7 @@ export function Nav() {
                     </div>
                     </form>
                 </div>
-                <p className="text-center mt-3">¿Quieres cambiar tu contraseña? <span onClick={contraseña} className="underline cursor-pointer">Pinche aqui</span></p>   
+                <p className="text-center mt-3">¿Quieres cambiar tu contraseña? <span onClick={contraseña && enviarCorreo} className="underline cursor-pointer">Pinche aqui</span></p>   
             </div>
 
             <div id="mensaje" className="w-contraseña h-52 bg-white fixed z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl hidden">
