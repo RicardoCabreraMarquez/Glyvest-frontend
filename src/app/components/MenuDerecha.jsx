@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export function MenuDerecha() {
 
@@ -45,8 +46,8 @@ export function MenuDerecha() {
   return(
     <div className="h-screen w-setting fixed top-0 right-0 border-l border-principal hidden lg:block">
         <ul className="mt-96 ml-14 text-xl Mitr">
-            <a href="#"><li className="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i className="fa-solid fa-house mr-3"></i>Inicio</li></a>
-            <a href="perfil.html"><li className="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i className="fa-solid fa-address-card mr-3"></i>Mi Perfil</li></a>
+            <Link to="/home"><li className="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i className="fa-solid fa-house mr-3"></i>Inicio</li></Link>
+            <Link to="/perfil"><li className="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i className="fa-solid fa-address-card mr-3"></i>Mi Perfil</li></Link>
             <a href="sugerencia.html"><li className="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i className="fa-solid fa-users mr-3"></i>Sugerencias</li></a>
             <li>
               <input type="file" onChange={handleFileChange} />

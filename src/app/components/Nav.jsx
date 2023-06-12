@@ -132,7 +132,6 @@ export function Nav() {
             <nav id="nav" className={`w-full h-12 bg-principal fixed inline-flex items-center z-20 Mitr`}>
                 <img src="./image/Logo3.png" className="w-56 ml-5 fixed hidden lg:block"/>
 
-                
                 <div className="container mx-auto justify-center hidden lg:flex">
                     <div className="flex rounded-xl">
                         <button className="flex items-center justify-center px-4 border-r rounded-l-xl bg-white">
